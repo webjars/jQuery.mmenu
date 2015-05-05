@@ -1,4 +1,4 @@
-WebJar for mmenu
+WebJar for jQuery.mmenu
 
 More info: http://webjars.org
 

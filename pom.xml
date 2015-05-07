@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>jQuery.mmenu</artifactId>
-    <version>5.1.2-SNAPSHOT</version>
+    <version>5.1.2</version>
     <name>jQuery.mmenu</name>
     <description>WebJar for jQuery.mmenu</description>
     <url>http://webjars.org</url>
@@ -50,7 +50,7 @@
         <url>http://github.com/webjars/jQuery.mmenu</url>
         <connection>scm:git:https://github.com/webjars/jQuery.mmenu.git</connection>
         <developerConnection>scm:git:https://github.com/webjars/jQuery.mmenu.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>jQuery.mmenu-5.1.2</tag>
     </scm>
 
     <dependencies>

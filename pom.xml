@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>jQuery.mmenu</artifactId>
-    <version>5.3.3-SNAPSHOT</version>
+    <version>8.3.0-SNAPSHOT</version>
     <name>jQuery.mmenu</name>
     <description>WebJar for jQuery.mmenu</description>
     <url>http://webjars.org</url>
@@ -19,13 +19,12 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <upstream.version>5.3.2</upstream.version>
+        <upstream.version>8.3.0</upstream.version>
         <upstream.url>https://github.com/BeSite/jQuery.mmenu/archive/v${upstream.version}</upstream.url>
         <destDir>${project.build.outputDirectory}/META-INF/resources/webjars/${project.artifactId}/${upstream.version}</destDir>
         <requirejs>
             {
-                "paths": { "mmenu": "js/mmenu" },
-                "shim": { "mmenu": [ "jquery" ] }
+                "paths": { "mmenu": "mmenu" }
             }
         </requirejs>
     </properties>
@@ -95,7 +94,7 @@
                                 <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${project.build.directory}/" />
                                 <echo message="moving resources" />
                                 <move todir="${destDir}">
-                                    <fileset dir="${project.build.directory}/jQuery.mmenu-${upstream.version}/dist" excludes="js_umd/" />
+                                    <fileset dir="${project.build.directory}/mmenu-js-${upstream.version}/dist" />
                                 </move>
                             </target>
                         </configuration>
